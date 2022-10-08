@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!--
+  Donovan Kong & <partner name here>
+  CSE 154
+  Final Project
+
+  This is the index.html for our final project. This contains a landing page
+  from which the user can navigate to any section of the website.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Login page</title>
+    <script src="login.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a class="website-name" href="index.html">university of CSE154</a>
+      <a href="login.html" class="buttonshade">login</a>
+      <a href="catalog.html">course catalog</a>
+      <a href="cart.html">cart</a>
+    </header>
+    <section id="login-box">
+      <h2>login</h2>
+      <form id="login">
+        <label for="username">Username:</label>
+        <br>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" id="password" name="password" required minlength="8">
+        <br>
+        <input type="submit" value="Login">
+      </form>
+      <p>New user? <a id="new-account" href="createaccount.html">Create an account!</a></p>
+    </section>
+  </body>
+</html>

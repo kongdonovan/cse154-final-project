@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!--
+  Donovan Kong & Dan Temereanca
+  CSE 154
+  Final Project
+
+  This is the catalog.html for our final project. This contains information
+  on all the courses available through our course planner.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cart</title>
+    <script src="cart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a class="website-name" href="index.html">university of CSE154</a>
+      <a id="login-btn" href="login.html">login</a>
+      <a href="catalog.html">course catalog</a>
+      <a href="cart.html" class="buttonshade">cart</a>
+    </header>
+    <section id="cart" class="hidden element-container">
+      <h1>Your cart</h1>
+      <hr>
+      <p>
+        This is your cart. If your cart is empty, nothing
+        will appear below. This is normal.
+      </p>
+    </section>
+    <section id="login-prompt" class="element-container">
+      <h1>You aren't logged in!</h1>
+      <hr>
+      <p>
+        In order to access this part of the website,
+        please ensure that you are logged in.
+      </p>
+    </section>
+    <section id="cart-container" class="list-view hidden">
+      <button id="bulk-enroll">Enroll!</button>
+    </section>
+    <section id="cart-error" class="hidden">
+      <h2>An error has occured!</h2>
+      <p>
+        This could be due to a number of things.
+        Try refreshing your page. If you're interested
+        in seeing the error message, please see below.
+      </p>
+      <p id="cart-error-message"></p>
+    </section>
+    <section id="cart-success" class="hidden">
+      <h2>Successfully signed up for classes!</h2>
+      <p>
+        You can see your most recent transactions
+        on the home page. Below is your transaction
+        ID. Please save this.
+      </p>
+      <p id="transaction-id"></p>
+    </section>
+  </body>
+</html>

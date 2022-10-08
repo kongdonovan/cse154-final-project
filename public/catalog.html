@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<!--
+  Donovan Kong & Dan Temereanca
+  CSE 154
+  Final Project
+
+  This is the catalog.html for our final project. This contains information
+  on all the courses available through our course planner.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Catalog</title>
+    <script src="catalog.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a class="website-name" href="index.html">university of CSE154</a>
+      <a id="login-btn" href="login.html">login</a>
+      <a href="catalog.html" class="buttonshade">course catalog</a>
+      <a href="cart.html">cart</a>
+    </header>
+    <section id="search-bar">
+      <h2>Search for Courses</h2>
+      <form>
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="search"><br>
+        <input type="checkbox" id="cse" name="cse" value="CSE">
+        <label for="cse"> CSE</label><br>
+        <input type="checkbox" id="dino" name="dino" value="DINO">
+        <label for="dino"> DINO</label><br>
+        <input type="checkbox" id="engl" name="engl" value="ENGL">
+        <label for="engl"> ENGL</label><br>
+        <input type="checkbox" id="phys" name="phys" value="PHYS">
+        <label for="phys"> PHYS</label><br>
+        <input type="submit" value="Go">
+      </form>
+      <button id="change-views">Change view</button>
+    </section>
+    <section id="course-cards" class="list-view">
+    </section>
+    <section id="detailed-view" class="hidden">
+    </section>
+    <section id="error" class="hidden">
+      <h2>An error has occured!</h2>
+      <p>This can mean several things. Try refreshing your page to fix it.</p>
+      <p>If you're interested in knowing what the actual error was, see below:</p>
+      <p id="error-message">The error</p>
+    </section>
+    <section id="catalog-success" class="hidden">
+      <h2>Successfully signed up for classes!</h2>
+      <p>
+        You can see your most recent transactions
+        on the home page. Below is your transaction
+        ID. Please save this.
+      </p>
+      <p id="catalog-transaction-id"></p>
+    </section>
+  </body>
+</html>

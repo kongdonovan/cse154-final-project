@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!--
+  Donovan Kong & Dan Temereanca
+  CSE 154
+  Final Project
+
+  This is the index.html for our final project. This contains a landing page
+  from which the user can navigate to any section of the website.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>University of CSE154 Registration</title>
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <section id="intro">
+      <header>
+        <a class="website-name buttonshade" href="index.html">university of CSE154</a>
+        <a id="login-btn" href="login.html">login</a>
+        <a href="catalog.html">course catalog</a>
+        <a href="cart.html">cart</a>
+      </header>
+      <article class="element-container">
+        <h1>University of CSE154 Course Registration</h1>
+        <hr>
+        <p>a project by Donovan Kong and Dan Temereanca</p>
+      </article>
+    </section>
+
+    <h2 id="previous-transaction" class="hidden">Your previous transactions:</h2>
+    <section id="user-info" class="hidden">
+    </section>
+
+    <section id="website-summary">
+      <h2>It doesn't seem like you're logged in!</h2>
+      <p>
+        If you haven't already, you should make an account.
+        This will enable you to sign up for classes and
+        take advantage of the full functionality of this
+        website.
+      </p>
+    </section>
+
+    <section id="index-error" class="hidden">
+      <h2>An error has occured!</h2>
+      <p>This can mean several things. Try refreshing your page to fix it.</p>
+      <p>If you're interested in knowing what the actual error was, see below:</p>
+      <p id="index-error-message">The error</p>
+    </section>
+  </body>
+</html>

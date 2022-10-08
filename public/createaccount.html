@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!--
+  Donovan Kong & Dan Temereanca
+  CSE 154
+  Final Project
+
+  This is the createaccount.html for our final project.
+  This page allows the user to create an account.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Create an Account</title>
+    <script src="createaccount.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a class="website-name" href="index.html">university of CSE154</a>
+      <a href="login.html" class="buttonshade">login</a>
+      <a href="catalog.html">course catalog</a>
+      <a href="cart.html">cart</a>
+    </header>
+    <section id="create-box">
+      <h2>create an account</h2>
+      <form id="create-account">
+        <label for="username">Username:</label>
+        <br>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" id="password" name="password" required minlength="8">
+        <br>
+        <label for="password">Confirm Password:</label>
+        <br>
+        <input type="password" id="confirm" name="confirm" required minlength="8">
+        <br>
+        <input type="submit" value="Create your account!">
+      </form>
+    </section>
+  </body>
+</html>
